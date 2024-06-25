@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
-import 'view/stopwatch_view.dart';
+import 'app_view.dart';
 
-void main() => runApp(const StopwatchView());
+
+void main() => runApp(const AppView());
