@@ -1,17 +1,24 @@
-# stopwatch
+# Stopwatch Mobile App
+### Watch demo
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=YqRTRCwXDiw">
+    <img src="https://img.youtube.com/vi/YqRTRCwXDiw/0.jpg" alt="Watch demo - TodoList App" width="800" height="700" style="border: 1px solid #ccc;">
+  </a>
+</p>
 
-A new Flutter project.
 
-## Getting Started
+## Overview
 
-This project is a starting point for a Flutter application.
+Stopwatch Mobile App is a Flutter-based mobile application designed to provide precise and user-friendly time tracking. It offers essential features to monitor elapsed time accurately and efficiently.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Intuitive Controls**: Start, pause, and reset the stopwatch with seamless UI interactions.
+- **Detail Time Display**:  View elapsed time in hours, minutes, seconds, and milliseconds for precise tracking.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# PRODIGY_AD_03
+## Screenshots
+
+![Screenshot 1](https://github.com/sanjiv576/PRODIGY_AD_03/blob/master/screenshots/Stopwatch%20UI.png)
+
+
+
