@@ -1,8 +1,8 @@
 # Stopwatch Mobile App
 ### Watch demo
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=YqRTRCwXDiw">
-    <img src="https://img.youtube.com/vi/YqRTRCwXDiw/0.jpg" alt="Watch demo - TodoList App" width="800" height="700" style="border: 1px solid #ccc;">
+  <a href="https://youtube.com/shorts/vo8tcgB9f9M">
+    <img src="https://github.com/sanjiv576/PRODIGY_AD_03/blob/master/screenshots/Stopwatch%20UI.png" alt="Watch demo - TodoList App" width="800" height="700" style="border: 1px solid #ccc;">
   </a>
 </p>
 
