@@ -15,10 +15,7 @@ class StopwatchView extends StatefulWidget {
 }
 
 class _StopwatchViewState extends State<StopwatchView> {
-  int hours = 00;
-  int minutes = 00;
-  int seconds = 00;
-  int miliseconds = 00;
+  final Stopwatch _stopwatch = Stopwatch();
 
   bool isStopwatch = true;
   bool isTimerStart = false;
@@ -26,38 +23,19 @@ class _StopwatchViewState extends State<StopwatchView> {
   Timer? _timer;
 
   void _resetTimer() {
-    setState(() {
-      hours = 0;
-      minutes = 0;
-      seconds = 0;
-      miliseconds = 0;
-    });
+    _stopwatch.reset();
+    setState(() {});
   }
 
   void _startTimer() {
-    _timer = Timer.periodic(const Duration(milliseconds: 1), (timer) {
-      setState(() {
-        if (miliseconds > 59) {
-          miliseconds = 0;
-          seconds++;
-
-          if (seconds > 59) {
-            seconds = 0;
-            minutes++;
-
-            if (minutes > 59) {
-              minutes = 0;
-              hours++;
-            }
-          }
-        } else {
-          miliseconds++;
-        }
-      });
+    _stopwatch.start();
+    _timer = Timer.periodic(const Duration(milliseconds: 30), (timer) {
+      setState(() {});
     });
   }
 
   void _pauseTimer() {
+    _stopwatch.stop();
     _timer!.cancel();
   }
 
@@ -75,6 +53,12 @@ class _StopwatchViewState extends State<StopwatchView> {
 
   @override
   Widget build(BuildContext context) {
+    final elapsed = _stopwatch.elapsed;
+    final hours = elapsed.inHours;
+    final minutes = elapsed.inMinutes % 60;
+    final seconds = elapsed.inSeconds % 60;
+    final milliseconds = elapsed.inMilliseconds % 1000;
+
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -97,7 +81,7 @@ class _StopwatchViewState extends State<StopwatchView> {
                 hours: hours.toString().padLeft(2, '0'),
                 minutes: minutes.toString().padLeft(2, '0'),
                 seconds: seconds.toString().padLeft(2, '0'),
-                miliseconds: miliseconds.toString().padLeft(2, '0'),
+                miliseconds: milliseconds.toString().padLeft(2, '0'),
                 isStopwatch: isStopwatch,
               ),
 
