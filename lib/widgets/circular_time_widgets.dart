@@ -66,7 +66,7 @@ class CircularTimeWidgets extends StatelessWidget {
           ),
           Text(
             isStopwatch
-                ? '$hours d: $minutes:$seconds.$miliseconds'
+                ? '$hours: $minutes:$seconds.$miliseconds'
                 : '$seconds.$miliseconds',
             style: const TextStyle(fontSize: 40),
           ),
